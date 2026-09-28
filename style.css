@@ -1,0 +1,212 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at center, #263a2b 0%, #0b1710 55%, #050805 100%);
+
+    color: white;
+}
+
+
+/* =========================
+   MAIN TITLE
+========================= */
+
+h1 {
+    margin-bottom: 35px;
+
+    text-align: center;
+
+    font-size: 40px;
+
+    color: #ffd700;
+
+    text-shadow:
+        0 0 8px #ffd700,
+        0 0 20px #b8860b;
+
+    letter-spacing: 2px;
+}
+
+
+h2{
+    padding-bottom: 1rem;
+    
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+    width: 300px;
+
+    padding: 15px 18px;
+
+    margin-bottom: 18px;
+
+    border: 2px solid #c9a227;
+    border-radius: 10px;
+
+    background: #111;
+
+    color: #fff;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* INPUT PLACEHOLDER */
+
+input::placeholder {
+    color: #777;
+}
+
+
+/* INPUT FOCUS */
+
+input:focus {
+    border-color: #ffd700;
+
+    box-shadow:
+        0 0 8px #ffd700,
+        0 0 18px rgba(255, 215, 0, 0.5);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    width: 300px;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        145deg,
+        #d4af37,
+        #8c6b16
+    );
+
+    color: #111;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* BUTTON HOVER */
+
+button:hover {
+    transform: translateY(-3px);
+
+    background: linear-gradient(
+        145deg,
+        #ffe66d,
+        #d4af37
+    );
+
+    box-shadow:
+        0 0 10px #ffd700,
+        0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+
+/* BUTTON CLICK */
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+#message {
+    width: 300px;
+
+    min-height: 65px;
+
+    margin-top: 30px;
+
+    padding: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    color: #ffd700;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    text-align: center;
+
+    box-shadow:
+        inset 0 0 15px rgba(255, 215, 0, 0.15),
+        0 0 15px rgba(255, 215, 0, 0.25);
+}
+
+
+/* =========================
+   EXTRA CASINO EFFECT
+========================= */
+
+body::before {
+    content: "♠  ♥  ♣  ♦";
+
+    position: fixed;
+    top: 25px;
+
+    font-size: 28px;
+
+    color: #ffd700;
+
+    letter-spacing: 18px;
+
+    opacity: 0.7;
+}
